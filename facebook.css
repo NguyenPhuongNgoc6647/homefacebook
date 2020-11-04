@@ -1,0 +1,259 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: Segoe UI,SegoeuiPc,San Francisco,Helvetica Neue,Helvetica,Lucida Grande,Roboto,Ubuntu,Tahoma,Microsoft Sans Serif,Arial,sans-serif;
+}
+
+a{
+   text-decoration: none;
+}
+li{
+   list-style: none;
+}
+.font{
+   font-family: Segoe UI,SegoeuiPc,San Francisco,Helvetica Neue,Helvetica,Lucida Grande,Roboto,Ubuntu,Tahoma,Microsoft Sans Serif,Arial,sans-serif;
+}
+.font14{
+   font-size:14;
+}
+.container{
+   width:100%;
+   height: 100vh;
+   position: relative;
+}
+.container-box-menubar{
+   display: flex;
+   flex-direction: row;
+   box-shadow:2px 5px 10px#eceef1;
+   position: fixed;
+   width: 100%;
+   background-color: white;
+}
+.container-box-content{
+   background-color:#F0F2F5;
+   width:100%;
+   padding-top:50px;
+}
+/* ----------box-search----------*/
+.box-search{
+   flex:2;
+   display: flex;
+   padding:10px 15px;
+}
+.box-navigation{
+   flex:5;
+}
+.box-user-message{
+   flex:3;
+}
+.img-logo>img{
+   flex:1;
+   width:40px;
+   height: 40px;
+   vertical-align: middle;
+}
+.box-search-onfacebook{
+   flex:4;
+   display:flex;
+   border-radius: 50px;
+   background-color:#F0F2F5;
+   height: 85%;
+   margin: auto 15px;
+}
+
+.icon-search{
+   align-self: center;
+   padding-left: 10px;
+   color:gray;
+}
+.input-search-facebook{
+   background-color:#F0F2F5;
+   border:none;
+   outline:0;
+   margin:0 15px;
+   font-size:15px;
+}
+
+/* ----------box-navigation---------- */
+.navigation{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 100%;
+   margin-left: 50px;
+}
+.navigation li{
+   flex:1;
+   text-align: center;
+   display: inline-block;
+   height: 100%;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   transition: all 0.2s ease;
+}
+.active-navigation{
+   border-bottom: 3px solid #1877F2;
+}
+.active-navigation a svg{
+   fill:#1877F2;
+}
+.navigation li:hover{
+   background-color:#F2F2F2;
+}
+.navigation li a{
+   display: block;
+   height: 100%;
+}
+.navigation li a svg{
+   height:100%;
+}
+.navigation li i{
+   font-size:25px;
+}
+.count-video{
+   position: absolute;
+   bottom:30px;
+   left: 65px;
+}
+.count-video span{
+   font-size: 12px;
+   background-color:#F02849;
+   padding:0 5px;
+   border-radius: 30px;
+   color:white;
+   font-weight: 500;
+}
+/* ----------box-user-message---------- */
+.box-user-message{
+   margin-left: 15px;
+   display: flex;
+   align-self: center;
+}
+.username-fb{
+   height: 100%;
+   border-radius: 25px;
+   padding:2px 7px;
+   transition: all 0.2s ease-in-out;
+}
+.username-fb:hover{
+   background-color: #F0F2F5;
+}
+.username-fb a{
+   display: block;
+}
+.img-username{
+   width:30px;
+   height: 30px;
+   border-radius: 30px;
+   vertical-align: middle;
+}
+.text-username{
+   font-size: 14px;
+   font-weight: 500;
+   color:black;
+}
+
+.list-options-mess li{
+   display: inline-block;
+   margin-left: 15px;
+}
+.list-options-mess li a{
+   display: block;
+   width: 35px;
+   height: 35px;
+   padding:7px;
+   background-color:#F0F2F5;
+   border-radius: 50px;
+}
+.icon-down{
+   width: 80%;
+   height: 80%;
+   margin-top: 5px;
+   margin-left: 2px
+}
+.options-icon-mess{
+   position: relative;
+}
+.count-mess{
+   position: absolute;
+   bottom:25px;
+   left: 20px;
+}
+.count-mess{
+   bottom:20px;
+   left: 25px;
+}
+.count-video span{
+   font-size: 12px;
+   background-color:#F02849;
+   padding:0 5px;
+   border-radius: 30px;
+   color:white;
+   font-weight: 500;
+}
+
+/* -----------container-box-content---------- */
+.container-box-content{
+   display:flex;
+}
+.menu-side-bar{
+   flex:2;
+}
+.news-fb{
+   flex:5;
+   background-color:pink;
+}
+.list-chat{
+   flex:2;
+   background-color: indianred;
+}
+
+
+/* ----------menu-side-bar---------- */
+.menu-options{
+   padding:20px 0 0 10px;
+}
+.menu-options li{
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   transition: all 0.2s ease-in-out;
+}
+.menu-options li:hover{
+   background-color:#E4E6E9;
+}
+.menu-options li a{
+   padding:10px 0 10px 5px;
+   display:block;
+   height: 100%;
+}
+.text-menu{
+   padding-left: 5px;
+}
+.clear-fix:after{
+   content:"";
+   display: block;
+   clear:both;
+}
+.icon-options{
+   float:left;
+}
+.content-options{
+   float:left;
+   line-height: 1;
+}
+.number-video{
+   font-size: 11px;
+   color:black;
+}
+.icon-more{
+   width: 25px;
+   height: 25px;
+   background-color:#D8DADF;
+   padding:7px;
+   border-radius: 30px;
+   vertical-align: middle;
+}
+.watch-more{
+   padding-top:0;
+}

@@ -30,7 +30,7 @@ li{
 .container-box-menubar{
    display: flex;
    flex-direction: row;
-   box-shadow:2px 5px 10px#eceef1;
+   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2),inset 0 0 0 0 rgba(255, 255, 255, 0.5);
    position: fixed;
    width: 100%;
    z-index: 1000;
@@ -39,7 +39,7 @@ li{
 .container-box-content{
 background-color: var(--bg-color);
    width:100%;
-   padding-top:50px;
+   padding-top:48px;
    align-self: stretch;
 }
 

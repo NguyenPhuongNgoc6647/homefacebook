@@ -49,4 +49,44 @@ $(document).ready(function(){
       return false;
    }
   })
+
+
+  var check_update = false;
+  $('#update-details').click(function(){
+
+     if(check_update === false){
+        $('.details').removeClass('displaynone')
+        check_update = true;
+        return;
+     }
+     if(check_update === true){
+      $('.details').addClass('displaynone')
+      check_update = false;
+      return;
+   }
+  })
+  $('.icon-close').click(function(){
+   $('.details').addClass('displaynone')
+   $('.favorite').addClass('displaynone')
+  })
+
+  $('.btn').click(function(){
+     $('.details').addClass('displaynone')
+  })
+
+
+  var check_fa = false;
+  $('#add-favorite').click(function(){
+
+     if(check_fa === false){
+        $('.favorite').removeClass('displaynone')
+        check_fa = true;
+        return;
+     }
+     if(check_fa === true){
+      $('.favorite').addClass('displaynone')
+      check_fa = false;
+      return;
+   }
+  })
 })
